@@ -2,17 +2,7 @@ const puppeteer = require("puppeteer");
 const fs = require("fs").promises;
 
 const projectname = "unusedFindNodeJS";
-const urlToTest = [
-    "https://www.takvim.com.tr/guncel/2024/02/14/aym-iptal-etti-danistay-kendini-aklama-pesine-dustu-ak-parti-dugmeye-basti-feto-ve-pkkya-yargi-ayari",
-    "https://www.takvim.com.tr/galeri/magazin/esra-erol-sarip-sarmalayip-paylasti-annesini-goren-sasip-kaldi-ablaniz-gibi-masallah-anne-kiz-sosyal-medyayi-salladi",
-    "https://www.takvim.com.tr/",
-    "https://www.takvim.com.tr/video/haber-videolari/erzincana-eylem-amacli-gecisler-yasaklandi-4-kisi-gozaltina-alindi",
-    "https://www.takvim.com.tr/yazarlar/bekirhazar/2024/02/12/saplantili-ezikler",
-    "https://www.takvim.com.tr/guncel",
-    "https://www.takvim.com.tr/galeri",
-    "https://www.takvim.com.tr/video",
-    "https://www.takvim.com.tr/yazarlar",
-];
+const urlToTest = ["example.com"];
 
 const run = async (url) => {
   const browser = await puppeteer.launch({ headless: true });
